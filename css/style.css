@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;   /* 16px × 62.5% =10px */
+    
+}
+
+body{
+    font-size: 2.0rem;
+    /* font-family: 'Roboto Slab', serif; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #222;
+    background-image: url(/img/ocean.jpg);
+    background-size: cover;
+}
+
+/* header */
+
+/* <!-- ProjectをInputするsection --> */
+
+
+.input-section{
+    width: 60%;
+    height: 300px;
+    background-color: #000000d0;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* 新規Projectを作成する */
+.input-title{
+    margin: 10px;
+}
+
+
+.input-items{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* inputship */
+.input-ship{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.input-ship p{
+    width: 100%;
+}
+
+.input-ship input{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* inputship */
+
+.flex-buyerSeller{
+    display: flex;
+}
+
+/* inputseller */
+.input-seller{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.input-seller p{
+    width: 100%;
+}
+
+.input-seller textarea{
+    width: 90%;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* inputseller */
+
+/* inputbuyer */
+.input-buyer{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.input-buyer p{
+    width: 100%;
+}
+
+.input-buyer textarea{
+    width: 90%;
+    float: right;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* inputbuyer */
+
+/* input project */
+.input-project{
+    width: 100%;
+    margin: 5px auto;
+}
+
+.input-project p{
+    width: 100%;
+}
+
+.input-project textarea{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+/* input project */
+
+
+
+/* create button */
+.createProject{
+    margin: 1.0rem 0;
+    width: 50%;
+    height: 4.0rem;
+    font-family: inherit;
+    font-size: 2.0rem;
+}
+
+.sendButton{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.createProject:hover{
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.project-list-main{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto ;
+    border: 1px solid black;
+    margin-bottom: 15px;
+
+}
+
+.project-list{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto ;
+    border: 1px solid black;
+}
+
+/* 表示画面 */
+
+.output-form{
+    width: 60%;
+    height: 300px;
+    background-color: #000000d0;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-list-main th{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.project-list th{
+    padding: 5px 0;
+    border: solid 1px white;
+}
+
+.ship-name{
+    width: 40%;
+}
+
+.project-name{
+    width: 40%;
+}
+
+.update{
+    width: 10%;
+}
+
+.delete{
+    width: 10%;
+}
+
+.update button{
+    width: 100%;
+}
+
+.delete button{
+    width: 15%;
+}
+
+.ship-name:hover{
+    background-color: rgb(99, 99, 99);
+    color: white;
+    cursor: pointer;
+}
+
+.ship-name:active{
+    padding-top:6px;
+    padding-bottom:4px;
+    border:1px solid #334c66;
+    background-color:#69c;
+    color:#e0ebf5;
+    -webkit-box-shadow:inset 0px 0px 8px #334c66;
+    -moz-box-shadow:inset 0px 0px 2px #3a6da0;
+    box-shadow:inset 0px 0px 2px #3a6da0;
+}
