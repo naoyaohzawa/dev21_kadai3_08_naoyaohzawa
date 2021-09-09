@@ -1,7 +1,7 @@
 
 // Firebaseの処理を描き始めます
 var firebaseConfig = {
-    apiKey: "AIzaSyDjkCqDhZ-8A-ujm5lkMs0mYy3GrHgpkuo",
+    apiKey: "",
     authDomain: "dev21chat-85eaa.firebaseapp.com",
     databaseURL: "https://dev21chat-85eaa-default-rtdb.firebaseio.com/",
     projectId: "dev21chat-85eaa",
