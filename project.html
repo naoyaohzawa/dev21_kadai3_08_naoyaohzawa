@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+  
+  <title>タスク管理アプリ</title>
+</head>
+
+<body>
+  <!-- コンテンツ表示画面 -->
+
+
+  <!-- section ProjectをInputするsection -->
+  <section class="input-section">
+    <div class="input-title"><h2>新規Projectを作成する</h2></div>
+    <div class="input-items">
+      <div class="input-ship">
+        <p>Ship Name</p>
+        <input type="text" id="shipname" class="inputShip">
+      </div>
+      <div class="flex-buyerSeller">
+        <div class="input-seller">
+          <p>Seller</p> 
+          <textarea class="seller" name="" id="seller" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="input-buyer">
+          <p>Buyer</p> 
+          <textarea class="buyer" name="" id="buyer" cols="30" rows="1"></textarea>
+        </div>            
+      </div>
+
+      <div class="input-project">
+        <p>Project Name</p> 
+        <textarea class="Project" name="" id="project" cols="30" rows="1"></textarea>
+      </div>  
+    </div>
+
+  <!-- 送信ボタン -->
+    <div class="sendButton">
+      <button class="createProject" id="send">Projectを作成する</button>
+    </div>
+
+  </section>
+  <!-- section ProjectをInputするsection -->
+
+
+  
+
+  <!-- section 保存されたデータが表示される箇所 -->
+  <section class="output-form" id="ship-list">
+      
+    <table class="project-list-main">
+      <tr>
+        <th class="ship-name">Ship Name</th>
+        <th class="project-name">Project name</th>
+        <th class="update">update</th>
+        <th class="delete">delete</th>
+      </tr>
+    </table>    
+    <table id="output" class="project-list">
+    </table>
+
+  
+
+  </section> 
+
+  
+  <!-- section 保存されたデータが表示される箇所 -->
+
+
+
+
+  <!-- **************以下はJquery************** -->
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- JQuery -->
+
+  <!--** 以下Firebase **-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
+  <script src="js/firebase.js"></script>
+
+</body>
+
+</html>
